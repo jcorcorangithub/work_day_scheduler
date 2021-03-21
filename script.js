@@ -7,3 +7,19 @@ function displayTime() {
   }
 
   setInterval(displayTime, 1000);
+
+
+
+
+
+
+
+
+  function pastOrPresent(currentTime, blockTime) {
+    // if blocktime < currenttime
+        // make grey
+    // else if blocktime == currenttime
+      // make yellow
+    // else 
+      // make green
+  }
