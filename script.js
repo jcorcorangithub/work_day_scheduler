@@ -1,4 +1,8 @@
-var timeDisplayEl = $('#time-display');
+let timeDisplayEl = $('#time-display');
+let currentTime = moment().format('H');
+
+
+
 
 
 function displayTime() {
@@ -6,20 +10,31 @@ function displayTime() {
     timeDisplayEl.text(rightNow);
   }
 
-  setInterval(displayTime, 1000);
+setInterval(displayTime, 1000);
 
-
-
-
-
-
-
-
-  function pastOrPresent(currentTime, blockTime) {
-    // if blocktime < currenttime
-        // make grey
-    // else if blocktime == currenttime
-      // make yellow
-    // else 
-      // make green
+// this function sets the color of a time block as needed
+function updateRowColor(a,b,c){
+  if(c<b){
+    a.css("background-color", "red");
+    
+  } else if (c==b){
+    a.css("background-color", "yellow");
+    
+  } else {
+    a.css("background-color", "blue");
+    
   }
+}
+
+
+updateRowColor ($("#9"), currentTime, 9);
+updateRowColor ($("#10"), currentTime, 10);
+updateRowColor ($("#11"), currentTime, 11);
+updateRowColor ($("#12"), currentTime, 12);
+updateRowColor ($("#13"), currentTime, 13);
+updateRowColor ($("#14"), currentTime, 14);
+updateRowColor ($("#15"), currentTime, 14);
+updateRowColor ($("#16"), currentTime, 15);
+updateRowColor ($("#17"), currentTime, 16);
+
+
