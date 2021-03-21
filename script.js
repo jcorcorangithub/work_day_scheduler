@@ -37,9 +37,59 @@ updateRowColor ($("#17"), currentTime, 16);
 
 
 //this function saves input into local storage
-$(document).on("click", "button", function(event) {
-event.preventDefault();
+ 
+function saveInput(a) {
+  $(document).on("click", "button", function(event) {
+ event.preventDefault();
+
+ let userInput = $(a).val();
+ localStorage.setItem("a", userInput);
+
+ $(a).val(localStorage.getItem(a));
+
+ })
+
+ 
+
+}
 
 
 
-})
+saveInput($("input-9"));
+saveInput($("input-10"));
+saveInput($("input-11"));
+saveInput($("input-12"));
+saveInput($("input-1"));
+saveInput($("input-2"));
+saveInput($("input-3"));
+saveInput($("input-4"));
+saveInput($("input-5"));
+
+
+
+
+
+
+
+
+// $('#saveBtn').on('click', function(){
+
+//   $('input[type="text"]').each(function(){    
+//       var id = $(this).attr('input-9');
+//       var value = $(this).val();
+//      localStorage.setItem(id, value);
+
+//   });   
+// });
+
+
+
+// $('#input').on('click', function(){
+//   $('input[type="text"]').each(function(){    
+//       var id = $(this).attr('input-9');
+//       var value = localStorage.getItem(id);
+
+//       $(this).val(value);
+
+//   }); 
+// });
