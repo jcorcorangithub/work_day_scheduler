@@ -30,9 +30,9 @@ updateRowColor ($("#11"), currentTime, 11);
 updateRowColor ($("#12"), currentTime, 12);
 updateRowColor ($("#13"), currentTime, 13);
 updateRowColor ($("#14"), currentTime, 14);
-updateRowColor ($("#15"), currentTime, 14);
-updateRowColor ($("#16"), currentTime, 15);
-updateRowColor ($("#17"), currentTime, 16);
+updateRowColor ($("#15"), currentTime, 15);
+updateRowColor ($("#16"), currentTime, 16);
+updateRowColor ($("#17"), currentTime, 17);
 
 
 
@@ -45,7 +45,7 @@ function saveInput(a) {
  let userInput = $(a).val();
  localStorage.setItem("a", userInput);
 
- $(a).val(localStorage.getItem(a));
+ //$(a).val(localStorage.getItem(a));
 
  })
 
@@ -56,6 +56,7 @@ function saveInput(a) {
 
 
 saveInput($("input-9"));
+//$("input-9").val(localStorage.getItem("input-9"));
 saveInput($("input-10"));
 saveInput($("input-11"));
 saveInput($("input-12"));
@@ -67,29 +68,3 @@ saveInput($("input-5"));
 
 
 
-
-
-
-
-
-// $('#saveBtn').on('click', function(){
-
-//   $('input[type="text"]').each(function(){    
-//       var id = $(this).attr('input-9');
-//       var value = $(this).val();
-//      localStorage.setItem(id, value);
-
-//   });   
-// });
-
-
-
-// $('#input').on('click', function(){
-//   $('input[type="text"]').each(function(){    
-//       var id = $(this).attr('input-9');
-//       var value = localStorage.getItem(id);
-
-//       $(this).val(value);
-
-//   }); 
-// });
