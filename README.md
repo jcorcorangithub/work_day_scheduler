@@ -10,4 +10,4 @@ link to github repo:
 https://github.com/jcorcorangithub/work_day_scheduler
 
 
-![alt text](screenshot)
+![alt text](screenshot.jpg)
