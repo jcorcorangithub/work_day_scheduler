@@ -4,7 +4,6 @@ let currentTime = moment().format('H');
 
 
 
-
 function displayTime() {
     var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
     timeDisplayEl.text(rightNow);
@@ -25,8 +24,6 @@ function updateRowColor(a,b,c){
     
   }
 }
-
-
 updateRowColor ($("#9"), currentTime, 9);
 updateRowColor ($("#10"), currentTime, 10);
 updateRowColor ($("#11"), currentTime, 11);
@@ -38,3 +35,11 @@ updateRowColor ($("#16"), currentTime, 15);
 updateRowColor ($("#17"), currentTime, 16);
 
 
+
+//this function saves input into local storage
+$(document).on("click", "button", function(event) {
+event.preventDefault();
+
+
+
+})
